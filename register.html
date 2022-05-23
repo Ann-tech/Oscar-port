@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Risque&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <header class="hamburger-menu header-container">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+           <span></span>
+        </label>
+        <div class="menu__box">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="menu__item">About me</a></li>
+                    <li><a href="index.html#contact-me-section" class="menu__item">Contact me</a></li>
+                    <li><a href="register.html" class="menu__item">Register</a></li>
+                    <li><a href="login.html" class="menu__item">Login</a></li>
+                    <li><a href="calc.html" class="menu__item">Calculator</a></li>
+                </ul>
+            </nav>
+            
+            <ul class="profile-icons">
+                <li>
+                    <a href="">
+                        <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M46.739 21.7485C46.5625 20.9673 46.075 20.2454 45.5187 19.9423C45.3421 19.8438 44.2484 19.7282 43.0765 19.6782C41.114 19.5907 40.8984 19.5517 40.2734 19.1892C39.2875 18.6126 39.0234 17.9876 39.014 16.3079C39.0046 13.0845 37.6656 10.0876 35.0203 7.39228C33.1359 5.46884 31.0265 4.16884 28.6234 3.43759C28.0468 3.26103 26.7578 3.20321 22.4421 3.15478C15.664 3.07665 14.1609 3.21259 11.8562 4.13134C7.60776 5.81103 4.56089 9.38603 3.44839 13.9548C3.2437 14.8142 3.1937 16.1907 3.14526 24.1017C3.08745 34.0142 3.15464 35.4688 3.77026 37.4313C5.2937 42.2751 9.62026 45.8595 13.9656 46.6407C15.4109 46.9048 33.2328 46.9626 35.0593 46.7188C38.2328 46.2892 40.7234 45.0095 43.0578 42.6267C44.7468 40.8985 45.8015 39.0329 46.4953 36.5626C46.9734 34.8438 46.9343 22.6173 46.739 21.7485ZM15.2828 15.5376C16.0453 14.7657 16.2593 14.736 21.025 14.736C25.3125 14.736 25.4578 14.7454 26.0843 15.0688C26.9921 15.5282 27.3921 16.172 27.3921 17.2079C27.3921 18.136 27.0203 18.7892 26.1906 19.3173C25.7421 19.6001 25.4781 19.6204 21.2781 19.6392C18.6906 19.6579 16.6203 19.6001 16.3171 19.522C14.6953 19.0626 14.0906 16.7392 15.2812 15.5376H15.2828ZM34.014 35.0485L32.5593 35.2829L24.9906 35.3704C18.3406 35.4485 16.4656 35.3313 16.114 35.1751C15.4203 34.872 14.7656 34.0329 14.6593 33.2813C14.5515 32.5688 14.9125 31.5923 15.4593 31.0938C16.1531 30.4688 16.4546 30.4501 24.9609 30.4392C33.7109 30.4298 33.6625 30.4298 34.4921 31.2017C35.6734 32.3048 35.4203 34.2485 34.014 35.0485Z" fill="#E35C77"/>
+                        </svg>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.0028 2.14862e-06C11.1887 -0.00573574 0 11.4815 0 25.6599C0 36.8717 6.99922 46.4023 16.7467 49.9025C18.0594 50.241 17.8583 49.2828 17.8583 48.6286V44.1818C10.2782 45.0941 9.97095 39.9415 9.46263 39.0808C8.43481 37.2791 6.00492 36.8201 6.73109 35.9594C8.45716 35.0471 10.2167 36.1889 12.2556 39.2816C13.7303 41.5251 16.6071 41.1464 18.065 40.7735C18.3834 39.4251 19.0649 38.2201 20.0034 37.2848C12.1495 35.8389 8.8761 30.9158 8.8761 25.0631C8.8761 22.2229 9.78662 19.6121 11.5741 17.5063C10.4346 14.0349 11.6803 11.0627 11.8478 10.6208C15.0933 10.3225 18.4672 13.0078 18.7297 13.2201C20.5731 12.7094 22.679 12.4398 25.0363 12.4398C27.4048 12.4398 29.5163 12.7209 31.3764 13.2373C32.0076 12.7439 35.1357 10.4372 38.1522 10.7184C38.3142 11.1602 39.5319 14.0636 38.4594 17.4891C40.2692 19.6006 41.1909 22.2343 41.1909 25.0803C41.1909 30.9445 37.8952 35.8733 30.019 37.2963C30.6936 37.9778 31.2293 38.7905 31.5947 39.687C31.9601 40.5835 32.1479 41.5459 32.1472 42.5178V48.9729C32.1919 49.4893 32.1472 50 32.9851 50C42.8779 46.5745 50 36.975 50 25.6656C50 11.4815 38.8057 2.14862e-06 25.0028 2.14862e-06Z" fill="#E35C77"/>
+                        </svg>
+                        <span>Github</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="">
+                        <svg width="20" height="20" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 5.92264C48.6076 8.47221 46.8994 10.6456 44.8754 12.4428C44.8954 12.9248 44.9054 13.4696 44.9054 14.0771C44.9054 17.4529 44.5056 20.8327 43.706 24.2167C42.9064 27.6006 41.685 30.8397 40.0418 33.9338C38.3987 37.0279 36.4413 39.7691 34.1699 42.1572C31.8984 44.5453 29.168 46.4495 25.9786 47.8697C22.7893 49.2899 19.3711 50 15.7242 50C10.0326 50 4.79121 48.1085 0 44.3254C0.850384 44.4419 1.66597 44.5001 2.44677 44.5001C7.20164 44.5001 11.4485 42.6972 15.1874 39.0913C12.9704 39.0412 10.9849 38.2011 9.23093 36.5708C7.47695 34.9406 6.26991 32.8575 5.6098 30.3214C6.26227 30.4744 6.90625 30.5509 7.54172 30.5509C8.45644 30.5509 9.35651 30.4041 10.2419 30.1103C7.87599 29.527 5.91323 28.0763 4.35367 25.7583C2.79417 23.4404 2.01442 20.765 2.01442 17.7322V17.5759C3.46664 18.5658 5.01567 19.0923 6.6615 19.1555C5.25993 18.0052 4.1487 16.5052 3.3278 14.6555C2.50685 12.8058 2.09638 10.8041 2.09638 8.65044C2.09638 6.37901 2.55873 4.26388 3.48344 2.30505C6.05636 6.19194 9.174 9.29847 12.8363 11.6246C16.4987 13.9508 20.4278 15.2427 24.6235 15.5003C24.4445 14.5822 24.3549 13.6242 24.3546 12.6261C24.3546 9.14122 25.3563 6.16566 27.3599 3.6994C29.3635 1.23313 31.7806 0 34.6115 0C37.5752 0 40.0716 1.32852 42.1007 3.98555C44.4189 3.42025 46.5896 2.39776 48.6127 0.918099C47.8333 3.93776 46.3314 6.26723 44.1071 7.90649C46.1514 7.60743 48.1157 6.94614 49.9999 5.92264H50Z" fill="#E35C77"/>
+                        </svg>
+                        <span>Twitter</span>
+                    </a>
+                    
+                </li>    
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="form-container">
+            <div class="heading-container">
+                <h1>Register</h1>
+                <svg width="20" height="19" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M34.1936 0.483711C32.8026 -0.418289 30.9456 -0.0222894 30.0446 1.36771L13.2346 27.2787L5.03655 19.6987C3.81955 18.5737 1.92255 18.6477 0.797555 19.8647C-0.327445 21.0807 -0.253445 22.9797 0.963555 24.1037L11.7276 34.0557C11.7276 34.0557 12.0366 34.3217 12.1796 34.4147C12.6836 34.7427 13.2496 34.8987 13.8096 34.8987C14.7916 34.8987 15.7546 34.4167 16.3296 33.5307L35.0776 4.63271C35.9796 3.24271 35.5836 1.38471 34.1936 0.483711Z" fill="#31373D"/>
+                </svg>
+                    
+            </div>
+            
+            <form action="">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" class="full-width">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" class="full-width">
+                <div class="half-width-container">
+                    <div class="half-width">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="half-width">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="half-width-container">
+                    <div class="half-width">
+                        <label for="country">Country</label>
+                        <input type="tel" name="country" id="phone">
+                    </div>
+                    <div class="half-width">
+                        <label for="state">State/Province</label>
+                        <input type="tel" name="state" id="state">
+                    </div>
+                </div>
+                <label for="userName">UserName</label>
+                <input type="text" name="userName" id="userName" class="full-width">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="full-width">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="confirmPassword" name="confirmPassword" id="confirmPassword" class="full-width">
+                <input type="submit" value="Sign up">
+            </form>
+        </section>
+        <div class="split-img-container">
+            <svg width="400" height="400" viewBox="0 0 407 407" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="407" height="407" fill="url(#pattern0)"/>
+                <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_12_1096" transform="scale(0.00444444)"/>
+                </pattern>
+                <image id="image0_12_1096" width="225" height="225" xlink:href="data:image/png;base64,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"/>
+                </defs>
+            </svg>
+            <p>Kindly Register</p>
+            <div>
+                <a href="">
+                    <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M46.739 21.7485C46.5625 20.9673 46.075 20.2454 45.5187 19.9423C45.3421 19.8438 44.2484 19.7282 43.0765 19.6782C41.114 19.5907 40.8984 19.5517 40.2734 19.1892C39.2875 18.6126 39.0234 17.9876 39.014 16.3079C39.0046 13.0845 37.6656 10.0876 35.0203 7.39228C33.1359 5.46884 31.0265 4.16884 28.6234 3.43759C28.0468 3.26103 26.7578 3.20321 22.4421 3.15478C15.664 3.07665 14.1609 3.21259 11.8562 4.13134C7.60776 5.81103 4.56089 9.38603 3.44839 13.9548C3.2437 14.8142 3.1937 16.1907 3.14526 24.1017C3.08745 34.0142 3.15464 35.4688 3.77026 37.4313C5.2937 42.2751 9.62026 45.8595 13.9656 46.6407C15.4109 46.9048 33.2328 46.9626 35.0593 46.7188C38.2328 46.2892 40.7234 45.0095 43.0578 42.6267C44.7468 40.8985 45.8015 39.0329 46.4953 36.5626C46.9734 34.8438 46.9343 22.6173 46.739 21.7485ZM15.2828 15.5376C16.0453 14.7657 16.2593 14.736 21.025 14.736C25.3125 14.736 25.4578 14.7454 26.0843 15.0688C26.9921 15.5282 27.3921 16.172 27.3921 17.2079C27.3921 18.136 27.0203 18.7892 26.1906 19.3173C25.7421 19.6001 25.4781 19.6204 21.2781 19.6392C18.6906 19.6579 16.6203 19.6001 16.3171 19.522C14.6953 19.0626 14.0906 16.7392 15.2812 15.5376H15.2828ZM34.014 35.0485L32.5593 35.2829L24.9906 35.3704C18.3406 35.4485 16.4656 35.3313 16.114 35.1751C15.4203 34.872 14.7656 34.0329 14.6593 33.2813C14.5515 32.5688 14.9125 31.5923 15.4593 31.0938C16.1531 30.4688 16.4546 30.4501 24.9609 30.4392C33.7109 30.4298 33.6625 30.4298 34.4921 31.2017C35.6734 32.3048 35.4203 34.2485 34.014 35.0485Z" fill="#E35C77"/>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.0028 2.14862e-06C11.1887 -0.00573574 0 11.4815 0 25.6599C0 36.8717 6.99922 46.4023 16.7467 49.9025C18.0594 50.241 17.8583 49.2828 17.8583 48.6286V44.1818C10.2782 45.0941 9.97095 39.9415 9.46263 39.0808C8.43481 37.2791 6.00492 36.8201 6.73109 35.9594C8.45716 35.0471 10.2167 36.1889 12.2556 39.2816C13.7303 41.5251 16.6071 41.1464 18.065 40.7735C18.3834 39.4251 19.0649 38.2201 20.0034 37.2848C12.1495 35.8389 8.8761 30.9158 8.8761 25.0631C8.8761 22.2229 9.78662 19.6121 11.5741 17.5063C10.4346 14.0349 11.6803 11.0627 11.8478 10.6208C15.0933 10.3225 18.4672 13.0078 18.7297 13.2201C20.5731 12.7094 22.679 12.4398 25.0363 12.4398C27.4048 12.4398 29.5163 12.7209 31.3764 13.2373C32.0076 12.7439 35.1357 10.4372 38.1522 10.7184C38.3142 11.1602 39.5319 14.0636 38.4594 17.4891C40.2692 19.6006 41.1909 22.2343 41.1909 25.0803C41.1909 30.9445 37.8952 35.8733 30.019 37.2963C30.6936 37.9778 31.2293 38.7905 31.5947 39.687C31.9601 40.5835 32.1479 41.5459 32.1472 42.5178V48.9729C32.1919 49.4893 32.1472 50 32.9851 50C42.8779 46.5745 50 36.975 50 25.6656C50 11.4815 38.8057 2.14862e-06 25.0028 2.14862e-06Z" fill="#E35C77"/>
+                    </svg>
+                </a>
+                <a href="">
+                    <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 5.92264C48.6076 8.47221 46.8994 10.6456 44.8754 12.4428C44.8954 12.9248 44.9054 13.4696 44.9054 14.0771C44.9054 17.4529 44.5056 20.8327 43.706 24.2167C42.9064 27.6006 41.685 30.8397 40.0418 33.9338C38.3987 37.0279 36.4413 39.7691 34.1699 42.1572C31.8984 44.5453 29.168 46.4495 25.9786 47.8697C22.7893 49.2899 19.3711 50 15.7242 50C10.0326 50 4.79121 48.1085 0 44.3254C0.850384 44.4419 1.66597 44.5001 2.44677 44.5001C7.20164 44.5001 11.4485 42.6972 15.1874 39.0913C12.9704 39.0412 10.9849 38.2011 9.23093 36.5708C7.47695 34.9406 6.26991 32.8575 5.6098 30.3214C6.26227 30.4744 6.90625 30.5509 7.54172 30.5509C8.45644 30.5509 9.35651 30.4041 10.2419 30.1103C7.87599 29.527 5.91323 28.0763 4.35367 25.7583C2.79417 23.4404 2.01442 20.765 2.01442 17.7322V17.5759C3.46664 18.5658 5.01567 19.0923 6.6615 19.1555C5.25993 18.0052 4.1487 16.5052 3.3278 14.6555C2.50685 12.8058 2.09638 10.8041 2.09638 8.65044C2.09638 6.37901 2.55873 4.26388 3.48344 2.30505C6.05636 6.19194 9.174 9.29847 12.8363 11.6246C16.4987 13.9508 20.4278 15.2427 24.6235 15.5003C24.4445 14.5822 24.3549 13.6242 24.3546 12.6261C24.3546 9.14122 25.3563 6.16566 27.3599 3.6994C29.3635 1.23313 31.7806 0 34.6115 0C37.5752 0 40.0716 1.32852 42.1007 3.98555C44.4189 3.42025 46.5896 2.39776 48.6127 0.918099C47.8333 3.93776 46.3314 6.26723 44.1071 7.90649C46.1514 7.60743 48.1157 6.94614 49.9999 5.92264H50Z" fill="#E35C77"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

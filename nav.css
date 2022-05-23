@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+
+:root {
+  font-size: 62.5%;
+  --main-bg-color: #fff;
+}
+
+header {
+  background: var(--main-bg-color);
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 70%;
+  margin: 0;
+  padding: 80px 0;
+  padding-left: 3rem;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu__box a, .profile-icons span {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+.profile-icons span {
+  margin-left: 5px;
+}
+
+.profile-icons li a {
+  display: flex;
+  align-items: center;
+}
+.menu__box li {
+  margin-bottom: 1rem;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.menu__box ul {
+  list-style-type: none;
+}
+
+.header-container input[type="checkbox"] {
+    display: block;
+  }
+
+  .header-container {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+
+  main {
+    padding-top: 64px;
+  }
+
+   .header-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  
+
+  /* .header-container .menu__box li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  } */
+
+
+
+@media screen and (min-width: 768px) {
+  .header-container input[type="checkbox"],
+  .header-container .menu__btn{
+    display: none;
+  }
+
+.header-container .menu__box {
+    background: initial;
+    height: auto;
+    width: 100%;
+    box-shadow: initial;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+  .menu__box {
+    position: initial;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+
+  .profile-icons {
+    order: -1;
+    width: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile-icons li {
+    display: inline-block;
+  }
+
+  
+
+  .profile-icons span {
+    display: none;
+  }
+
+  .menu__box nav {
+    width: 55%;
+  }
+  .menu__box nav > ul{
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__box li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu__box nav {
+    width: 40%;
+  }
+}

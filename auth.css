@@ -1,0 +1,149 @@
+:root {
+    font-size: 62.5%;
+    --main-bg-color: #6A5272;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+
+.split-img-container{
+    display: none;
+}
+
+label, input {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background: var(--main-bg-color);
+    padding-bottom: 1rem;
+}
+
+.main-body main {
+    height: 100%;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+input, select {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+
+.form-container {
+    border-radius: 5px;
+    padding: 2rem;
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-container form {
+    width: 96%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-container {
+    display: flex;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    margin-right: 5px;
+    font-size: 2.2rem;
+    font-family: 'Risque', cursive;
+}
+
+input[type='submit'] {
+    /* width: 40%;
+    margin: 0 auto; */
+    border-radius: 10px;
+    background: #E35C77;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: #fff;
+    align-self: flex-end;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        padding: 0;
+    }
+    
+    .split-img-container {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        position: fixed;
+        top: -5%;
+        right: 0;
+    }
+
+    .split-img-container p {
+        font-size: 2rem;
+        margin-left: -30px;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    .split-img-container div {
+        margin-left: -30px;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+
+    .main-body .split-img-container div {
+        margin-left: 0;
+    }
+    
+    .form-container {
+        width: 60%;
+        padding: 2rem 4rem;
+    }
+/* 
+    .form-container form {
+        width: 98%;
+    } */
+
+    .half-width {
+        width: 47%;
+    }
+
+    .half-width-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-container {
+        border-radius: initial;
+        margin: initial;
+    }
+
+    input[type='submit'] {
+        width: 15%;
+    }
+    
+}
