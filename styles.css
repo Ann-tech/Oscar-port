@@ -61,7 +61,10 @@ body {
 }
 
 .home-page .form-container form {
-    width: 98%;
+    width: 80%;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 1rem;
 }
 
 .about-me-section {
