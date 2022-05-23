@@ -8,6 +8,44 @@ body {
     height: 100%;
 }
 
+/* About me styles */
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+.intro svg {
+    margin-right: 15px;
+}
+
+.home-page {
+    color: #333;
+}
+
+.home-page h1 {
+    margin: 0;
+}
+
+.home-page h2,
+.home-page h3 {
+    font-size: 2rem;
+    font-family: 'Risque', cursive;
+}
+
+.home-page p {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-page main {
+    padding-left: 6rem;
+    padding-top: 8rem;
+}
+
+.greeting {
+    margin-left: 45px;
+    margin-top: 1rem;
+}
 
 .split-img-container{
     display: none;
