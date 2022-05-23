@@ -85,6 +85,10 @@ header {
   text-decoration: none;
 }
 
+.menu__box .current {
+  color: #E35C77;
+  text-decoration: underline;
+}
 .profile-icons span {
   margin-left: 5px;
 }
