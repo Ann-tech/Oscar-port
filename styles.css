@@ -135,14 +135,16 @@ h1 {
 }
 
 input[type='submit'] {
-    /* width: 40%;
-    margin: 0 auto; */
     border-radius: 10px;
     background: #E35C77;
     border: 1px solid transparent;
     cursor: pointer;
     color: #fff;
     align-self: flex-end;
+}
+
+.home-page input[type="submit"] {
+    margin-top: 1rem;
 }
 
 
