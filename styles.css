@@ -52,6 +52,7 @@ body {
 
 .home-page-main-text {
     width: 90%;
+    margin-top: 1rem;
 }
 
 .greeting {
@@ -112,7 +113,7 @@ body {
 
 .home-page .img-container div {
     margin-top: 2rem;
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
 }
@@ -186,6 +187,16 @@ input[type='submit'] {
     margin-top: 1rem;
 }
 
+@media screen and (max-width: 509px) {
+    .home-page .img-container {
+        width: 70%;
+    }
+
+    .home-page .img-container div {
+        width: 70%;
+    }
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -203,6 +214,10 @@ input[type='submit'] {
     .home-page .img-container {
         order: 0;
     }
+
+    .home-page .img-container div {
+        width: 40%;
+    }
     
     
     .split-img-container {
@@ -219,6 +234,7 @@ input[type='submit'] {
 
     .home-page-main-text {
         width: 60%;
+        margin: 0;
     }
 
     .split-img-container p {
