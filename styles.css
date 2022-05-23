@@ -35,12 +35,23 @@ body {
 .home-page p {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
-    max-width: 80%;
+    /* max-width: 80%; */
 }
 
 .home-page main {
-    padding-left: 6rem;
+    padding-left: 2rem;
     padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page .img-container {
+    order: -1;
+}
+
+.home-page-main-text {
+    width: 90%;
 }
 
 .greeting {
@@ -79,9 +90,14 @@ body {
 }
 
 .home-page .img-container {
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.home-page .img-container img {
+    width: 80%;
 }
 
 .home-page .img-container p {
@@ -177,6 +193,17 @@ input[type='submit'] {
         display: flex;
         padding: 0;
     }
+
+    .home-page main {
+        padding-left: 6rem;
+        flex-direction: row;
+        align-items: initial;
+    }
+    
+    .home-page .img-container {
+        order: 0;
+    }
+    
     
     .split-img-container {
         width: 40%;
@@ -188,6 +215,10 @@ input[type='submit'] {
         position: fixed;
         top: -5%;
         right: 0;
+    }
+
+    .home-page-main-text {
+        width: 60%;
     }
 
     .split-img-container p {
