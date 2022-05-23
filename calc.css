@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table {
+    border: 1px solid black;
+    border-spacing: 10px;
+    background-color: rgb(100, 100, 194);
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+    align-self: center;
+    
+   
+}
+
+th {
+    padding: 45px 20px;
+    background-color: white;
+}
+
+td {
+    text-align: center;
+    width: 25%;
+    padding: 25px 20px;
+    background-color: white;
+    font-size: medium;
+}
+#ac{
+    border: 1px solid green;
+    background-color: green;
+    color: #fff;
+}
+#off{
+    background-color: rgb(122, 56, 56);
+    color: white;
+    border: none;
+    
+}
+
+@media screen and (min-width: 768px) {
+
+}
