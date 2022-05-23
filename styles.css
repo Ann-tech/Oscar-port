@@ -90,11 +90,20 @@ input, select {
     align-items: flex-start;
 }
 
+.home-page .form-container {
+    padding: 2rem 0;
+    width: 100%;
+}
+
 .form-container form {
     width: 96%;
     align-self: flex-end;
     display: flex;
     flex-direction: column;
+}
+
+.home-page .form-container form {
+    width: 98%;
 }
 
 .heading-container {
@@ -160,6 +169,10 @@ input[type='submit'] {
     .form-container {
         width: 60%;
         padding: 2rem 4rem;
+    }
+
+    .home-page .form-container {
+        padding: 2rem 0;
     }
 /* 
     .form-container form {
