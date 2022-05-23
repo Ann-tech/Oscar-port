@@ -78,6 +78,29 @@ body {
     margin-bottom: 1rem;
 }
 
+.home-page .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page .img-container p {
+    margin-top: 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.home-page .img-container span {
+    display: none;
+}
+
+.home-page .img-container div {
+    margin-top: 2rem;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .split-img-container{
     display: none;
 }
@@ -101,7 +124,7 @@ label {
     font-size: 1.5rem;
 }
 
-input, select {
+input, select, textarea {
     margin-bottom: 15px;
     padding: 10px;
     width: 100%;
